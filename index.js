@@ -1,6 +1,6 @@
-let userData(name, email) = {
-  userName: name,
-  userEmail: email
+let userData = {
+  userName: "Chris",
+  userEmail: "test@test.com"
 };
 
 let submitData = {
@@ -12,7 +12,7 @@ let submitData = {
   body: JSON.stringify(userData)
 };
 
-fetch("http://localhost:3000/users", configObj)
+return fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
     return response.json();
   })
