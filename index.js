@@ -18,7 +18,7 @@ return fetch("http://localhost:3000/users", configObj)
     return response.json();
   })
   .then(function(object) {
-    console.log(object);
+    document.body.innerHTML = object["id"];
   });
 
 }
