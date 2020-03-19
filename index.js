@@ -1,6 +1,6 @@
 function userData(name, email) {
-  userName: name;
-  userEmail: email
+  userName = name;
+  userEmail = email
 };
 
 function submitData = {
