@@ -1,4 +1,4 @@
-function userData(name, email) = {
+function userData(name, email) {
   userName: name,
   userEmail: email
 };
