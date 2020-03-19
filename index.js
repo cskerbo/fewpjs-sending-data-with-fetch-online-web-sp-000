@@ -20,5 +20,7 @@ return fetch("http://localhost:3000/users", configObj)
   .then(function(object) {
     document.body.innerHTML = object["id"];
   });
-
+.catch(function(error) {
+  document.body.innerHTML = error;
+})
 }
