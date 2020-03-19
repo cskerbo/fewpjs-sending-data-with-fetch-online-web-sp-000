@@ -12,7 +12,7 @@ let submitData = {
   body: JSON.stringify(userData)
 };
 
-return fetch("http://localhost:3000/users", configObj)
+fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
     return response.json();
   })
