@@ -22,5 +22,5 @@ return fetch("http://localhost:3000/users", configObj)
   });
 .catch(function(error) {
   document.body.innerHTML = error;
-})
+});
 }
