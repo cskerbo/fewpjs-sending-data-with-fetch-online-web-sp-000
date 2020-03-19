@@ -1,9 +1,9 @@
-let userData = {
-  userName: "Chris",
-  userEmail: "test@test.com"
+function userData(name, email) = {
+  userName: name,
+  userEmail: email
 };
 
-let submitData = {
+function submitData = {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
