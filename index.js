@@ -9,10 +9,10 @@ let configObj = {
     "Content-Type": "application/json",
     "Accept": "application/json"
   },
-  body: JSON.stringify(formData)
+  body: JSON.stringify(submitData)
 };
 
-fetch("http://localhost:3000/dogs", configObj)
+fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
     return response.json();
   })
