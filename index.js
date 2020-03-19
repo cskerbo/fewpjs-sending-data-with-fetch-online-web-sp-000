@@ -1,21 +1,24 @@
-function userData(name, email) {
-  userName = name;
-  userEmail = email
-};
+function submitData(name, email) {
+  let formData = {
+    userName: name,
+    userEmail: email
+  };
 
-function submitData = {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "Accept": "application/json"
-  },
-  body: JSON.stringify(userData)
-};
+  let configObj = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify(formData)
+  };
 
-fetch("http://localhost:3000/users", configObj)
+return fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
     return response.json();
   })
   .then(function(object) {
     console.log(object);
   });
+
+}
