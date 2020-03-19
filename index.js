@@ -1,15 +1,15 @@
-let submitData(name, email) = {
+let userData(name, email) = {
   userName: name,
   userEmail: email
 };
 
-let configObj = {
+let submitData = {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
     "Accept": "application/json"
   },
-  body: JSON.stringify(submitData)
+  body: JSON.stringify(userData)
 };
 
 fetch("http://localhost:3000/users", configObj)
