@@ -1,5 +1,5 @@
 function userData(name, email) {
-  userName: name,
+  userName: name;
   userEmail: email
 };
 
